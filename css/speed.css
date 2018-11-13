@@ -1,0 +1,74 @@
+@keyframes result {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: #D64933;
+}
+
+.form-control {
+    background-color: #B03C2A;
+    border: #B03C2A;
+    color: #ffffff;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.content {
+    padding-top: 15vh;
+}
+
+.result {
+    margin-top: 60px;
+    font-size: 6em;
+    animation-name: result;
+    animation-duration: 0.3s;
+}
+
+.returnBtn {
+    left: 20px;
+    bottom: 30px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 600;
+    animation-name: result;
+    animation-duration: 0.3s;
+}
+
+.returnBtn:hover {
+    transform: scale(1.5,1.5);
+    transition: 100ms;
+}
+
+.returnBtn i {
+    margin-top: 15px;
+}
+
+.cop-wrapper {
+    color: #ffffff;
+    bottom: 0px;
+    position: fixed;
+    width: 100vw;
+    text-align: center !important;
+}
+
+.cop {
+    font-size: 8px;
+}

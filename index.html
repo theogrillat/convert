@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit converter</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/boostrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row an1">
+            <div class="container text-center">
+                <h1 class="title">Convert</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 an2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kw en Cv</h5>
+                        <p class="card-text">Convertir des <span class="highlight">Kilowatts</span> en <span class="highlight">Chevaux
+                                Vapeurs</span></p>
+                        <a href="converter-power/power.html" class="btn btn-success">Go !</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 an3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mph en Kmh</h5>
+                        <p class="card-text">Convertir des <span class="highlight">Miles par heures</span> en <span
+                                class="highlight">Kilometre par heures</span></p>
+                        <a href="converter-speed/speed.html" class="btn btn-success">Go !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cop-wrapper an1 text-center">
+        <p class="cop">All rights reserved, Theo Grillat</p>
+    </div>
+
+    <script>
+        if (navigator.serviceWorker.controller) {
+            console.log('[PWA Builder] active service worker found, no need to register')
+        } else {
+
+            //Register the ServiceWorker
+            navigator.serviceWorker.register('pwabuilder-sw.js', {
+                scope: './'
+            }).then(function (reg) {
+                console.log('Service worker has been registered for scope:' + reg.scope);
+            });
+        }
+    </script>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/script.js"></script>
+
+    
+
+</body>
+
+</html>
