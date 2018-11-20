@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -21,6 +21,11 @@ h1 {
 .title {
     font-size: 6em;
     margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+.subtitle {
+    color: #ffffff;
     margin-bottom: 8vh;
 }
 
@@ -40,6 +45,10 @@ h1 {
 
 .highlight {
     font-weight: 600;
+}
+
+.highlight-title {
+    font-weight: 800;
 }
 
 .cop-wrapper {

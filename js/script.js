@@ -46,3 +46,18 @@ var an3 = anime({
     loop: false,
     delay: 2*del
 });
+
+var an4 = anime({
+    targets: '.an4',
+    translateY: [
+        { value: 600, duration: 0 },
+        { value: 0, duration: dur }
+      ],
+      opacity: [
+          { value : 0, duration: 0},
+          { value : 1, duration: dur + 1000}
+      ],
+      easing: 'easeOutQuint',
+    loop: false,
+    delay: 3*del
+});
