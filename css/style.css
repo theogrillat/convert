@@ -31,6 +31,10 @@ body {
     height: 32vh;
 }
 
+.spacer-end {
+    height: 200px;
+}
+
 .card {
     background-color: #B03C2A;
     border: #B03C2A;
