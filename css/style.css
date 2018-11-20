@@ -16,6 +16,16 @@ body {
     display: none;
 }
 
+.convert-header {
+    background-color: #D64933;
+    z-index: 99;
+    position: fixed;
+}
+
+.spacer {
+    height: 375px;
+}
+
 .card {
     background-color: #B03C2A;
     border: #B03C2A;

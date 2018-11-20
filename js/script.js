@@ -64,23 +64,23 @@ var an4 = anime({
 
 // install prompt
 
-var a2hsBtn = document.querySelector(".ad2hs-prompt");
+// var a2hsBtn = document.querySelector(".ad2hs-prompt");
 
-var showAddToHomeScreen = function() {
+// var showAddToHomeScreen = function() {
     
-    a2hsBtn.style.display = "block";
+//     a2hsBtn.style.display = "block";
 
-    a2hsBtn.addEventListener("click", addToHomeScreen);
-}
+//     a2hsBtn.addEventListener("click", addToHomeScreen);
+// }
 
-var deferredPrompt;
+// var deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', function (e) {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
+// window.addEventListener('beforeinstallprompt', function (e) {
+//   // Prevent Chrome 67 and earlier from automatically showing the prompt
+//   e.preventDefault();
+//   // Stash the event so it can be triggered later.
+//   deferredPrompt = e;
 
-  showAddToHomeScreen();
+//   showAddToHomeScreen();
 
-});
+// });
