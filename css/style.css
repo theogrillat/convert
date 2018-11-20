@@ -16,7 +16,12 @@ body {
     display: none;
 }
 
+.fullwidth {
+    width: 100vw;
+}
+
 .convert-header {
+    width: 100%;
     background-color: #D64933;
     z-index: 99;
     position: fixed;
