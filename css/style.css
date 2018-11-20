@@ -28,7 +28,7 @@ body {
 }
 
 .spacer {
-    height: 375px;
+    height: 32vh;
 }
 
 .card {
@@ -47,13 +47,13 @@ h1 {
 
 .title {
     font-size: 6em;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 1vh;
 }
 
 .subtitle {
     color: #ffffff;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
 }
 
 .btn {
