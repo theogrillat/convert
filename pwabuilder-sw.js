@@ -2,34 +2,21 @@
 
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
-  "./css/boostrap.min.css",
-  "./css/font-awesome.min.css",
-  "./css/power.css",
-  "./css/speed.css",
+  "./converter-power/css/style.css",
+  "./converter-power/js/power.js",
+  "./converter-power/js/anime.min.js",
+  "./converter-power/power.html",
+  "./converter-speed/css/style.css",
+  "./converter-speed/js/speed.js",
+  "./converter-speed/js/anime.min.js",
+  "./converter-speed/speed.html",
   "./css/style.css",
   "./generationInfo.json",
-  "./icons/android/android-launchericon-144-144.png",
-  "./icons/android/android-launchericon-192-192.png",
-  "./icons/android/android-launchericon-48-48.png",
-  "./icons/android/android-launchericon-512-512.png",
-  "./icons/android/android-launchericon-72-72.png",
-  "./icons/android/android-launchericon-96-96.png",
-  "./icons/chrome/chrome-extensionmanagementpage-48-48.png",
-  "./icons/chrome/chrome-favicon-16-16.png",
-  "./icons/chrome/chrome-installprocess-128-128.png",
   "./index.html",
-  "./js/anime.min.js",
-  "./js/bootstrap.min.js",
-  "./js/jquery.min.js",
-  "./js/popper.min.js",
-  "./js/power.js",
   "./js/script.js",
-  "./js/speed.js",
+  "./js/anime.min.js",
   "./manifest.json",
-  "./power.html",
-  "./pwabuilder-sw.js",
-  "./speed.html"
-
+  "./pwabuilder-sw.js"
 ];
 
 //Install stage sets up the cache-array to configure pre-cache content
