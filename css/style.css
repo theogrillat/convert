@@ -6,6 +6,16 @@ body {
     background-color: #D64933;
 }
 
+.container-fluid {
+    background-color: #ffffff;
+    height: 20vh;
+    padding-top: 5vh;
+} 
+
+.ad2hs-prompt {
+    display: none;
+}
+
 .card {
     background-color: #B03C2A;
     border: #B03C2A;
@@ -17,6 +27,8 @@ h1 {
     margin-top: 20px;
     color: #ffffff;
 }
+
+
 
 .title {
     font-size: 6em;
