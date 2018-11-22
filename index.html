@@ -1,77 +1,99 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
     <meta name="theme-color" content="#B03C2A">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
     <title>Unit converter</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
 
-    <!-- <div class="container-fluid text-center">
-        <h2>Install mon app !!</h2>
-        <div class="ad2hs-prompt btn btn-success">Go !</div>
-    </div> -->
-
-
-    <div class="convert-header text-center an1">
+    <div class="app">
+        <div class="convert-header text-center an1">
             <h1 class="title">Convert</h1>
-            <h5 class="subtitle">Ici vous pouvez convertir plein de <span class="highlight-title">trucs</span> <br> en plein de <span class="highlight-title">trucs</span>, c'est cool</h5>
-    </div>
+            <h5 class="subtitle">Ici vous pouvez convertir plein de <span class="highlight-title">trucs</span> <br> en
+                plein de <span class="highlight-title">trucs</span>, c'est cool</h5>
+        </div>
 
-    <div class="container">
-         
-        <div class="spacer"></div>
-        <div class="row">
-            <div class="col-sm-6 an2">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kw en Cv</h5>
-                        <p class="card-text">Convertir des <span class="highlight">Kilowatts</span> en <span class="highlight">Chevaux
-                                Vapeurs</span></p>
-                        <a href="converter-power/power.html" class="btn btn-success">Go !</a>
+        <div class="container">
+
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-sm-6 an2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kw en Cv</h5>
+                            <p class="card-text">Convertir des <span class="highlight">Kilowatts</span> en <span class="highlight">Chevaux
+                                    Vapeurs</span></p>
+                            <a href="converter-power/power.html" class="btn btn-success">Go !</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 an3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mph en Kmh</h5>
-                        <p class="card-text">Convertir des <span class="highlight">Miles par heures</span> en <span
-                                class="highlight">Kilometre par heures</span></p>
-                        <a href="converter-speed/speed.html" class="btn btn-success">Go !</a>
+                <div class="col-sm-6 an3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mph en Kmh</h5>
+                            <p class="card-text">Convertir des <span class="highlight">Miles par heures</span> en <span
+                                    class="highlight">Kilometre par heures</span></p>
+                            <a href="converter-speed/speed.html" class="btn btn-success">Go !</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 an4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lbs en Kg</h5>
-                        <p class="card-text">Convertir des <span class="highlight">Livres</span> en <span
-                                class="highlight">Kilogrammes</span></p>
-                        <a href="converter-weight/weight.html" class="btn btn-success">Go !</a>
+                <div class="col-sm-6 an4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Lbs en Kg</h5>
+                            <p class="card-text">Convertir des <span class="highlight">Livres</span> en <span class="highlight">Kilogrammes</span></p>
+                            <a href="converter-weight/weight.html" class="btn btn-success">Go !</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            
+        </div>
+        <div class="spacer-end"></div>
+
+        <div class="cop-wrapper an1 text-center">
+            <p class="cop">All rights reserved, Theo Grillat</p>
         </div>
     </div>
-    <div class="spacer-end"></div>
 
-    <div class="cop-wrapper an1 text-center">
-        <p class="cop">All rights reserved, Theo Grillat</p>
-    </div>
-
-    <script>
+    <!-- <script>
         if (navigator.serviceWorker.controller) {
             console.log('[PWA Builder] active service worker found, no need to register')
         } else {
@@ -83,20 +105,16 @@
                 console.log('Service worker has been registered for scope:' + reg.scope);
             });
         }
-    </script>
+    </script> -->
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script defer src="js/font-awesome.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/script.js"></script>
-
-    
-
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
